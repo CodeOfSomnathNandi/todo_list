@@ -1,0 +1,98 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2024-01-22T13:53:36.0041767"><meta name="build-number" content="${buildNumber}">       <title>C language todo | Languages Learning Path</title><script id="virtual-toc-data" type="application/json">[{"id":"getting-started","level":0,"title":"Getting started","anchor":"#getting-started"},{"id":"1-basic-use-of-data-types-primitive-types","level":0,"title":"1. Basic use of data types (Primitive types)","anchor":"#1-basic-use-of-data-types-primitive-types"},{"id":"2-working-with-strings","level":0,"title":"2. working with strings","anchor":"#2-working-with-strings"},{"id":"3-learn-memory-concepts","level":0,"title":"3. learn memory concepts","anchor":"#3-learn-memory-concepts"},{"id":"4-learn-error-handling","level":0,"title":"4. learn error handling","anchor":"#4-learn-error-handling"},{"id":"5-learning-working-with-different-file-types","level":0,"title":"5. learning working with different file types","anchor":"#5-learning-working-with-different-file-types"},{"id":"6-learn-from-project","level":0,"title":"6. learn from project","anchor":"#6-learn-from-project"},{"id":"7-learning-threads-in-c-language","level":0,"title":"7. learning threads in c language","anchor":"#7-learning-threads-in-c-language"},{"id":"8-learning-variable-arguments","level":0,"title":"8. learning variable arguments","anchor":"#8-learning-variable-arguments"}]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="C language todo | Languages Learning Path"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="Languages Learning Path Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="index_md.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="C language todo | Languages Learning Path"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "index_md.html#webpage", "url": "index_md.html", "name": "C language todo | Languages Learning Path", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "Languages Learning Path Help" }</script><!-- End Schema.org --></head>      <body data-id="index" data-main-title="C language todo" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs=""  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Languages Learning Path  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="index"   id="index.md">C language todo</h1>  <section class="chapter"><h2 id="getting-started" data-toc="getting-started"   >Getting started</h2><p id="cf2b52ff_1598">Every programming language has its own concept and approach to do basic things</p></section><section class="chapter"><h2 id="1-basic-use-of-data-types-primitive-types" data-toc="1-basic-use-of-data-types-primitive-types"   >1. Basic use of data types (Primitive types)</h2><p id="cf2b52ff_1599">There are many primitive data types of different size. We have to learn which data type should I use for which value For example</p><div class="code-block" data-lang="c"         >
+int main()
+{
+    int age; // We know that age can not greater than 128 for a human
+    short age; // we can use short data type here 
+    // TODO: check value range for short type
+    return 0;
+}
+</div></section><section class="chapter"><h2 id="2-working-with-strings" data-toc="2-working-with-strings"   >2. working with strings</h2><p id="cf2b52ff_1601">Check all string functions for basic work like split a string, getting length of a string, getting char array to use for loop</p></section><section class="chapter"><h2 id="3-learn-memory-concepts" data-toc="3-learn-memory-concepts"   >3. learn memory concepts</h2><p id="cf2b52ff_1602">Check all memory related functions like malloc, realloc and calloc.</p></section><section class="chapter"><h2 id="4-learn-error-handling" data-toc="4-learn-error-handling"   >4. learn error handling</h2><p id="cf2b52ff_1603">Learn error handling for c language. Because error handling is required for building some error free apps</p><div class="code-block" data-lang="c"         >
+#include &lt;errno.h&gt; 
+#include &lt;stdio.h&gt; 
+
+int main() 
+{ 
+	// If a file is opened which does not exist, 
+	// then it will be an error and corresponding 
+	// errno value will be set 
+	FILE* fp; 
+
+	// opening a file which does not exist 
+	fp = fopen(&quot;GeeksForGeeks.txt&quot;, &quot;r&quot;); 
+
+	printf(&quot;Value of errno: %d\n&quot;, errno); 
+
+	return 0; 
+}
+</div><p id="cf2b52ff_1605">For more information: <a href="https://www.geeksforgeeks.org/error-handling-in-c/" id="cf2b52ff_1606"   data-external="true" rel="noopener noreferrer" >https://www.geeksforgeeks.org/error-handling-in-c/</a></p></section><section class="chapter"><h2 id="5-learning-working-with-different-file-types" data-toc="5-learning-working-with-different-file-types"   >5. learning working with different file types</h2><p id="cf2b52ff_1607">Most of the program is needed to save data in files. So learn file operations like file opening writing and reading.</p><ol class="list _decimal" id="cf2b52ff_1608" type="1"><li class="list__item" id="cf2b52ff_1609"><p>Now learn about how to read, write binary files in c programming language. This type of operation is used for downloading files from internet. For more information: <a href="https://www.delftstack.com/howto/c/read-binary-file-in-c/" id="cf2b52ff_1610"   data-external="true" rel="noopener noreferrer" >https://www.delftstack.com/howto/c/read-binary-file-in-c/</a></p></li><li class="list__item" id="cf2b52ff_1611"><p>Now learn how to work with other file types like csv, xml and etc file types. This file types is needed for storing data in filesystem. For more information: <a href="https://www.geeksforgeeks.org/relational-database-from-csv-files-in-c/" id="cf2b52ff_1612"   data-external="true" rel="noopener noreferrer" >https://www.geeksforgeeks.org/relational-database-from-csv-files-in-c/</a></p></li></ol></section><section class="chapter"><h2 id="6-learn-from-project" data-toc="6-learn-from-project"   >6. learn from project</h2><p id="cf2b52ff_1613">Best way for learn is making of projects. Projects are best for apply programming concepts</p><ol class="list _decimal" id="cf2b52ff_1614" type="1"><li class="list__item" id="cf2b52ff_1615"><p>Create a program for management employees in a company.Implement Adding employee and removing employee, changing salary, etc functions in this program.</p></li></ol></section><section class="chapter"><h2 id="7-learning-threads-in-c-language" data-toc="7-learning-threads-in-c-language"   >7. learning threads in c language</h2><p id="cf2b52ff_1616">Because today every languages uses threads for programs<br> For more information: <a href="https://www.tutorialspoint.com/windows-thread-api-in-the-c-program" id="cf2b52ff_1618"   data-external="true" rel="noopener noreferrer" >https://www.tutorialspoint.com/windows-thread-api-in-the-c-program</a><br> For more information of thread.h: <a href="https://en.cppreference.com/w/c/thread" id="cf2b52ff_1620"   data-external="true" rel="noopener noreferrer" >https://en.cppreference.com/w/c/thread</a></p><div class="code-block" data-lang="c"         >
+
+#include&lt;windows.h&gt;
+#include&lt;stdio.h&gt;
+DWORD Sum;
+/* data is shared by the thread(s) */
+/* thread runs in this separate function */
+DWORD WINAPI Summation(LPVOID Param){
+   DWORD Upper = *(DWORD*)Param;
+   for (DWORD i = 0; i &lt;= Upper; i++)
+   Sum += i;
+   return 0;
+}
+int main(int argc, char *argv[]){
+   DWORD ThreadId;
+   HANDLE ThreadHandle;
+   int Param;
+   if (argc != 2){
+      fprintf(stderr,&quot;An integer parameter is required&quot;);
+      return -1;
+   }
+   Param = atoi(argv[1]);
+   if (Param &lt; 0){
+      fprintf(stderr,&quot;An integer &gt;= 0 is required&quot;);
+      return -1;
+   }
+   /* create the thread */
+   ThreadHandle = CreateThread( NULL, /* default security attributes */ 0, /* default stack size */    
+   Summation, /* thread function */ &amp;Param, /* parameter to thread function */ 0, /* default creation    flags */ &amp;ThreadId);
+   /* returns the thread identifier */
+   if (ThreadHandle != NULL){
+      /* now wait for the thread to finish */ WaitForSingleObject(ThreadHandle,INFINITE);
+      /* close the thread handle */
+      CloseHandle(ThreadHandle);
+      printf(&quot;sum = %d&quot;,Sum);
+   }
+}
+</div></section><section class="chapter"><h2 id="8-learning-variable-arguments" data-toc="8-learning-variable-arguments"   >8. learning variable arguments</h2><p id="cf2b52ff_1622">many of function takes variable arguments. For example</p><div class="code-block" data-lang="c"         >
+int sum(int a, ...); // here ... is for variable arguments
+</div><p id="cf2b52ff_1624">This is a sample code</p><div class="code-block" data-lang="c"         >
+#include &lt;stdio.h&gt;
+#include &lt;stdarg.h&gt;
+ 
+void simple_printf(const char* fmt, ...)
+{
+    va_list args;
+    va_start(args, fmt);
+ 
+    while (*fmt != '\0') {
+        if (*fmt == 'd') {
+            int i = va_arg(args, int);
+            printf(&quot;%d\n&quot;, i);
+        } else if (*fmt == 'c') {
+            // A 'char' variable will be promoted to 'int'
+            // A character literal in C is already 'int' by itself
+            int c = va_arg(args, int);
+            printf(&quot;%c\n&quot;, c);
+        } else if (*fmt == 'f') {
+            double d = va_arg(args, double);
+            printf(&quot;%f\n&quot;, d);
+        }
+        ++fmt;
+    }
+ 
+    va_end(args);
+}
+ 
+int main(void)
+{
+    simple_printf(&quot;dcff&quot;, 3, 'a', 1.999, 42.5); 
+}
+</div><p id="cf2b52ff_1626">For more information: <a href="https://en.cppreference.com/w/c/variadic" id="cf2b52ff_1627"   data-external="true" rel="noopener noreferrer" >https://en.cppreference.com/w/c/variadic</a></p></section><div class="last-modified"> Last modified: 22 January 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">   <a class="navigation-links__next" href="java-language-todo.html">Java Language Todo</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>
